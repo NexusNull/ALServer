@@ -1,0 +1,15 @@
+{
+  "name": "alserver",
+  "version": "1.0.0",
+  "description": "Opensource AL server",
+  "main": "main.js",
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patric Wellershaus",
+  "license": "ISC"
+}
