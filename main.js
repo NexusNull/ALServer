@@ -75,6 +75,7 @@ io.sockets.on('connection', function (socket) {
             oSocket.emit("disappear", {"id": character.id, "to": null, "s": 0});
         }
     });
+
     socket.on("send_updates", function () {
         checkLimit()
         var players = [];
@@ -89,6 +90,7 @@ io.sockets.on('connection', function (socket) {
             monsters: []
         });
     });
+
     socket.on("move", function (data) {
         checkLimit()
         if (character) {
@@ -105,6 +107,7 @@ io.sockets.on('connection', function (socket) {
             console.log("No character")
         }
     });
+
     socket.on("say", function (data) {
         checkLimit()
         if (character) {
@@ -123,5 +126,4 @@ io.sockets.on('connection', function (socket) {
             console.log("No character")
         }
     });
-
 });
